@@ -11,9 +11,10 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    justify-content: flex-end;
+    height: auto;
   }
-  
+
   .chat-header {
     padding: 10px;
     background-color: #ae00ff;
@@ -28,9 +29,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
-  
+
   .chat-messages .message .message-content.from-agent {
     background-color: #ccc;
     color: #000;
@@ -63,8 +64,6 @@ body {
     max-width: 80%;
   }
   
-
-  
   .message.from-agent .message-content {
     background-color: #ccc;
     color: #000;
@@ -73,11 +72,14 @@ body {
   .chat-messages .message .author {
     font-weight: bold;
     margin-right: 15px; 
+    justify-content: space-between;
+    text-align: left; 
   }
 
   .chat-messages .message .authoruser{
     font-weight: bold;
-    margin-right: 10px; 
+    margin-left: 15px; 
+    justify-content: space-between;
     text-align: right; 
   }
   
@@ -85,6 +87,7 @@ body {
     font-size: 12px;
     color: #aaa;
     margin-left: 10px;
+    justify-content: space-between;
   }
   
   .chat-input {
@@ -124,8 +127,7 @@ body {
   
   html{
     overflow-x:hidden;
-    }
-
+  }
 
   footer {
     color: #ae00ff;
