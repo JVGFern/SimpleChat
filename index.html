@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -7,44 +8,31 @@
   </head>
   <body>
     <div class="chat-container">
-        <div class="chat-header">Atendimento On-line</div>
-        <div class="chat-messages">
-          <div class="message">
-            <span class="author">Atendente diz:</span>
-            <div class="message-content from-agent">
-              <span class="text">Bom diaa!!!</span>
-              <span class="time">10:30</span>
-            </div>
-          </div>
-          <div class="message">
-            <span class="author">Atendente diz:</span>
-            <div class="message-content from-agent">
-              <span class="text">Olá, como posso ajudá-lo?</span>
-              <span class="time">10:30</span>
-            </div>
-          </div>
-          <div class="message">
-            <span class="authoruser">Você diz:</span>
-            <div class="message-content from-user">
-              <span class="text">Gostaria de saber mais sobre o produto X.</span>
-              <span class="time">10:31</span>
-            </div>
-          </div>
-          <div class="message">
-            <span class="authoruser">Você diz:</span>
-            <div class="message-content from-user">
-              <span class="text">E também gostaria de saber o valor do produto X.</span>
-              <span class="time">10:32</span>
-            </div>
+        <div class="chat-header">
+         <div class="text-header">
+           <span class="header">Atendimento On-line</span>
+         </div>
+          <div class="switch-container">
+            <label class="switch">
+              <input type="checkbox" class="dark-mode-toggle">
+              <span class="slider round"></span>
+            </label>
           </div>
         </div>
+        <div class="chat-messages"></div>
         <div class="chat-input">
-          <input type="text" placeholder="Digite sua mensagem...">
-          <button>Enviar</button>
+          <select id="userTypeSelect">
+            <option value="Você">Usuário</option>
+            <option value="Atendente">Atendente</option>
+          </select>
+          <input id="mensageInput" type="text" placeholder="Digite sua mensagem...">
+          <button id="messageButton">Enviar</button>
         </div>
       </div>
       <footer>
         <p>Made for João Vittor, 2023💜</p>
       </footer>
+    <script src="index.js"></script>
+    <script src="darkMode.js"></script>    
   </body>
 </html>
